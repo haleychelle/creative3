@@ -1,0 +1,11 @@
+html {
+  background-color: midnightblue;
+  color: silver;
+  text-align:center;
+  font-family: sans-serif;
+}
+
+.entry img {
+  width: 90%;
+  height: 90%;
+}

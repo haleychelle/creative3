@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+  <script src="notepad.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css"> 
+</head>
+<body ng-app='app' ng-controller='mainCtrl'>
+  <h1> Large Picture Viewer and Color Finder</h1>
+
+  <div>
+    <ul class='User-list'>
+      <li ng-repeat='note in notepad'>
+        <entry notepad= 'notepad' />
+    </ul>
+    <form name='notepad' ng-submit='addNew(notepad)'>
+    <input placeholder='update image url' ng-model='notepad.url' style="display: table-cell; padding: 10px;"/>
+<!--    <button type="submit">Add Note</button>-->
+    <input placeholder='change my color!' style="background-color:{{color}}" ng-model="color" value={{color}}>
+    </form>
+  </div>
+</body>
+</html>
